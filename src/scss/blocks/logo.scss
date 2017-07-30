@@ -1,0 +1,26 @@
+.logo {
+  padding-left: 4px;
+  padding-top: 8px;
+  width: 60px;
+  box-sizing: border-box;
+
+  @media (min-width: $screen-m) {
+    width: 150px;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 170px;
+  }
+
+  .logo-img {
+    width: 50px;
+
+    @media (min-width: $screen-m) {
+      width: 100px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 141px;
+    }
+  }
+}

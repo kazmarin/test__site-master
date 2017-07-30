@@ -1,0 +1,90 @@
+.card-collection {
+  // текст лежит сверху картинки
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+
+  // затемнение сверху на карточке
+  &:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: '';
+    width: 100%;
+    height: inherit;
+    background-color: rgba(144, 146, 153, 0.35);
+  }
+
+  .card-collection-img {
+
+    @media (max-width: $screen-m - 1) {
+      width: 780px;
+      height: 300px;
+    }
+
+    @media (min-width: $screen-m) {
+      width: 1530px;
+      height: 750px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 100%;
+      height: 750px;
+    }
+  }
+
+  &__inner {
+    // текст лежит сверху картинки
+    position: absolute;
+    top: 315px;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-weight: normal;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: 3px;
+    color: #fff;
+
+    @media (min-width: $screen-m) {
+      font-size: $font-size + 2;
+      letter-spacing: 10px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-size + 12;
+      letter-spacing: 10px;
+    }
+  }
+
+  &__title {
+    padding-top: 68px;
+    font-family: $font-family;
+    font-weight: bold;
+    font-style: normal;
+    font-size: $font-size + 3;
+    line-height: $line-height;
+    color: #fff;
+
+    @media (min-width: $screen-m) {
+      padding-top: 45px;
+      font-size: $font-size + 20;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 68px;
+      font-size: $font-size + 42;
+    }
+  }
+
+  &__btn {
+    margin-top: 138px;
+  }
+}

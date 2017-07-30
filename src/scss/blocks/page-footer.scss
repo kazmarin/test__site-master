@@ -1,0 +1,16 @@
+.page-footer {
+  height: 87px;
+
+  &__container {
+    @include content-area();
+  }
+
+  &__text {
+    padding-top: 43px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: $font-size;
+    line-height: $line-height + 5;
+    color: #9a9a9a;
+    text-align: center;
+  }
+}

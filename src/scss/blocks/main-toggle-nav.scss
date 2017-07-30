@@ -1,0 +1,30 @@
+.main-toggle-nav {
+
+  @media (max-width: $screen-m - 1) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #C7C6C6;
+    box-sizing: border-box;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  &__link {
+    font-family: $font-family;
+    font-weight: normal;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: #fff;
+    text-decoration: none;
+  }
+}
